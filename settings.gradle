@@ -1,0 +1,3 @@
+include ':customimageselection'
+include ':app'
+rootProject.name = "Custom Image Selection"
