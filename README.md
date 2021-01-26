@@ -22,3 +22,4 @@ dependencies {
   implementation 'com.github.sz32:custom-image-selection:0.1.0'
 }
 ```
+![](assets/preview1.jpg) ![](assets/preview2.jpg)
