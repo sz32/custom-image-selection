@@ -1,12 +1,12 @@
 package com.app.image.custom.image.selection.util
 
+import android.Manifest.permission.READ_EXTERNAL_STORAGE
+import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
 import android.app.Activity
-import android.content.Context
 import android.database.Cursor
 import android.net.Uri
 import android.provider.MediaStore
-import androidx.appcompat.app.AppCompatActivity
-import java.math.MathContext
+import androidx.annotation.RequiresPermission
 
 class ImagesHelper(private val context: Activity) {
 
@@ -17,6 +17,7 @@ class ImagesHelper(private val context: Activity) {
         getAllImagesPath()
     }
 
+    @RequiresPermission(allOf = [READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE])
     fun getAllImages(): ArrayList<ModelImages> {
         return allImages
     }

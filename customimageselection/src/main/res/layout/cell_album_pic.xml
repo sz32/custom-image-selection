@@ -20,7 +20,17 @@
             android:id="@+id/ivAlbumImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:foreground="#30000000"
             android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/ivPlayIcon"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <CheckBox
             android:id="@+id/chkAlbumImage"

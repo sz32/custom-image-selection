@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.image.custom.image.selection.R
 import com.app.image.custom.image.selection.util.ImagePath
+import com.app.image.custom.image.selection.util.gone
+import com.app.image.custom.image.selection.util.isVideoFile
+import com.app.image.custom.image.selection.util.visible
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import kotlinx.android.synthetic.main.cell_album_pic.view.*
@@ -39,6 +42,12 @@ class AdapterFolderImages(private var context: Context?, var imagePathList: Arra
                 .thumbnail(0.3f)
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(ivAlbumImage)
+
+            if (isVideoFile("file://${imagePath?.imagePath}")) {
+                ivPlayIcon?.visible()
+            } else {
+                ivPlayIcon?.gone()
+            }
 
         }
 
