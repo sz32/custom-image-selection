@@ -42,5 +42,6 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
     }
 }
 ```
+[![](https://jitpack.io/v/sz32/custom-image-selection.svg)](https://jitpack.io/#sz32/custom-image-selection)
 
 ![](assets/preview1.jpg) ![](assets/preview2.jpg)
