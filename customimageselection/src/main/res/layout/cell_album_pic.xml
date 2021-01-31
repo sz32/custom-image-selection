@@ -11,7 +11,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_180sdp"
+        android:layout_height="@dimen/_160sdp"
         android:foreground="?android:attr/selectableItemBackground"
         android:orientation="horizontal"
         tools:ignore="MissingDefaultResource">
@@ -29,7 +29,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="center_vertical"
-            android:checked="false" />
+            android:checked="false"
+            android:visibility="gone"
+            tools:visibility="gone" />
 
     </RelativeLayout>
 

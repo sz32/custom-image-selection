@@ -9,6 +9,7 @@
         android:allowBackup="true"
         android:supportsRtl="true">
         <activity android:name=".activites.ActAlbum"/>
+        <activity android:name=".activites.ActAlbumNew"/>
     </application>
 
 
