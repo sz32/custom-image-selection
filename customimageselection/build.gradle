@@ -54,4 +54,5 @@ dependencies {
 
     implementation 'com.nabinbhandari.android:permissions:3.8'
 
+    implementation 'com.eftimoff:android-viewpager-transformers:1.0.1@aar'
 }

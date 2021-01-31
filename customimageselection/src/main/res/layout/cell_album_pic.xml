@@ -12,6 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_160sdp"
+        android:animateLayoutChanges="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:orientation="horizontal"
         tools:ignore="MissingDefaultResource">
@@ -32,7 +33,7 @@
             android:visibility="gone"
             tools:visibility="visible" />
 
-        <CheckBox
+        <!--<CheckBox
             android:id="@+id/chkAlbumImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +42,15 @@
             android:layout_gravity="center_vertical"
             android:checked="false"
             android:visibility="gone"
-            tools:visibility="gone" />
+            tools:visibility="gone" />-->
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_40sdp"
+            android:src="@drawable/ic_check"
+            android:visibility="gone" />
 
     </RelativeLayout>
 

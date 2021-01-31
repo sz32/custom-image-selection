@@ -1,7 +1,11 @@
 package com.app.image.custom.image.selection.util
 
+import android.app.Activity
 import android.view.View
+import android.widget.Toast
 import java.net.URLConnection
+
+private var toast: Toast? = null
 
 fun isImageFile(path: String?): Boolean {
     val mimeType: String? = URLConnection.guessContentTypeFromName(path)
@@ -13,18 +17,22 @@ fun isVideoFile(path: String?): Boolean {
     return mimeType?.startsWith("video") ?: false
 }
 
-fun View.visible(){
+fun View.visible() {
     this.visibility = View.VISIBLE
 }
 
-fun View.gone(){
+fun View.gone() {
     this.visibility = View.GONE
 }
 
-fun View.invisible(){
+fun View.invisible() {
     this.visibility = View.INVISIBLE
 }
 
-fun toast(){
-
+fun Activity.toast(s: String) {
+    if (toast != null) {
+        toast?.cancel()
+    }
+    toast = Toast.makeText(this, s, Toast.LENGTH_LONG)
+    toast?.show()
 }
