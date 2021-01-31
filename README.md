@@ -3,6 +3,9 @@
 
 [![](https://jitpack.io/v/sz32/custom-image-selection.svg)](https://jitpack.io/#sz32/custom-image-selection)
 
+Download APK from Release and give it a try
+
+
 How to
 To get a Git project into your build:
 
