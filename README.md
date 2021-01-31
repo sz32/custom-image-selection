@@ -23,7 +23,7 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-  implementation 'com.github.sz32:custom-image-selection:0.1.0'
+  implementation 'com.github.sz32:custom-image-selection:Tag'
 }
 ```
 
