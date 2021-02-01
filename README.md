@@ -50,3 +50,4 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
 }
 ```
 ![](assets/preview-ui.jpeg)
+![](assets/preview-ui-2.jpeg)
