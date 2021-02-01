@@ -49,4 +49,4 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
     }
 }
 ```
-![](assets/preview-ui.gif)
+![](assets/preview-ui.jpeg)
